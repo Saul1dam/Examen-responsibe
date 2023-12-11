@@ -1,0 +1,130 @@
+:root{
+    /*Primarios*/
+
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /*Neutrales*/
+
+    --vdblue: hsl(234, 12%, 34%);
+    --gblue: hsl(299, 6%, 66%);
+    --vlgray: hsl(0, 0%, 98%);
+}
+
+html{
+    font-size: ;
+    font-size:  62.5%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+*,*::before, *:after{
+    box-sizing: inherit;
+}
+span{
+    color: var(--vdblue);
+}
+/*Generalidades*/
+body{
+    font-size: 15px;
+    background-color: var(--vlgray);
+}
+h1{
+    color: var(--gblue);
+}
+p{
+    color: var(--gblue);
+}
+/*Texto Principal*/
+.texto{
+    padding-left: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+}
+/*Colocación de las cajas*/
+.cajas{
+    border-radius: 2%;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+    background-color: var(--vlgray);
+}
+.cajas h1{
+    color: var(--vdblue);
+}
+.caja1{
+    background-color:white;
+    /* box-shadow: inset; */
+    border-top: solid;
+    border-color: var(--cyan);
+    margin-bottom: 2rem;
+}
+.caja2{
+    background-color:white;
+    /* box-shadow: inset; */
+    border-top: solid;
+    border-color: var(--red);
+    margin-bottom: 2rem;
+}
+.caja3{
+    background-color:white;
+    /* box-shadow: inset; */
+    border-top: solid;
+    border-color: var(--orange);
+    margin-bottom: 2rem;
+}
+.caja4{
+    background-color:white;
+    /* box-shadow: inset; */
+    border-top: solid;
+    border-color: var(--blue);
+    margin-bottom: 2rem;
+}
+/*Sombreado*/
+.sombra{
+     box-shadow: -11px 7px 32px -10px rgba(0,0,0,0.75);
+     padding: 2rem;
+ }
+ /*Colocación de los iconos*/
+.contenedor{
+    display: grid;
+    grid-template-columns: 74% 40%;
+}
+
+/*Escritorio*/
+
+@media(min-width:768px){
+    .texto{
+        justify-content: center;
+        text-align: center;
+    }
+    .cajas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .caja1{
+        position:absolute;
+        left: 100px;
+    }
+    
+    .caja4{
+        position: absolute;
+       left: 955px;
+    }
+}
+
+@media(min-width:1500px){
+    .caja1{
+        position: absolute;
+        left: 340px;
+    }
+    .caja4{
+        position: absolute;
+        left: 1190px;
+    }
+}
